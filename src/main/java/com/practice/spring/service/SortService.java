@@ -1,16 +1,18 @@
-package service;
+package com.practice.spring.service;
 
-import logic.JavaSort;
-import logic.Sort;
+import com.practice.spring.logic.Sort;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SortService {
 
     //dependency injection => 간결합 떼기, 의존성 주입
     private final Sort<String> sort;
 
-    public SortService(Sort<String> sort) {
+    public SortService (@Qualifier("bubbleSort") Sort<String> sort) {
         this.sort = sort;
         System.out.println("구현체: " + sort.getClass().getName());
     }

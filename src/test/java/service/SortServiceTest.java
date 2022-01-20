@@ -1,7 +1,7 @@
 package service;
 
-import logic.BubbleSort;
-import logic.JavaSort;
+import com.practice.spring.logic.BubbleSort;
+import com.practice.spring.service.SortService;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

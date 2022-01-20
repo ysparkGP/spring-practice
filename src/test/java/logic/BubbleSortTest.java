@@ -1,5 +1,6 @@
 package logic;
 
+import com.practice.spring.logic.BubbleSort;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
